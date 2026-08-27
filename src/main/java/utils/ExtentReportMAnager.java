@@ -7,7 +7,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentReportMAnager {
+public class ExtentReportManager {
 
 	private static ExtentReports extent;
 	private static ExtentTest test;
@@ -15,7 +15,7 @@ public class ExtentReportMAnager {
 	public static ExtentReports getReportInstance() {
 
 		if (extent == null) {
-			String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+			String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-MM-ss").format(new Date());
 			String reportPath = "reports/ExtentReport_" + timestamp + ".html";
 			ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
 
@@ -31,7 +31,6 @@ public class ExtentReportMAnager {
 	
 	public static ExtentTest createTest(String testName) {
 		test = getReportInstance().createTest(testName);
-		
 		return test;
 		
 		
