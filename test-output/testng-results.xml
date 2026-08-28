@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-28T12:47:52 EDT" name="Default suite" finished-at="2026-08-28T12:48:06 EDT" duration-ms="14640">
+  <suite started-at="2026-08-28T15:04:30 EDT" name="Default suite" finished-at="2026-08-28T15:04:59 EDT" duration-ms="29652">
     <groups>
     </groups>
-    <test started-at="2026-08-28T12:47:52 EDT" name="Default test" finished-at="2026-08-28T12:48:06 EDT" duration-ms="14640">
+    <test started-at="2026-08-28T15:04:30 EDT" name="Default test" finished-at="2026-08-28T15:04:59 EDT" duration-ms="29652">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:47:51 EDT" name="setupReport" finished-at="2026-08-28T12:47:52 EDT" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:29 EDT" name="setupReport" finished-at="2026-08-28T15:04:30 EDT" duration-ms="722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:47:52 EDT" name="setUp" finished-at="2026-08-28T12:47:56 EDT" duration-ms="4755" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:30 EDT" name="setUp" finished-at="2026-08-28T15:04:37 EDT" duration-ms="7534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:47:56 EDT" name="testValidLogin" finished-at="2026-08-28T12:47:59 EDT" duration-ms="2912" status="PASS">
+        <test-method signature="testValidLogin()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:37 EDT" name="testValidLogin" finished-at="2026-08-28T15:04:44 EDT" duration-ms="7021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:47:59 EDT" name="teardown" finished-at="2026-08-28T12:48:00 EDT" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:44 EDT" name="teardown" finished-at="2026-08-28T15:04:45 EDT" duration-ms="974" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:48:00 EDT" name="setUp" finished-at="2026-08-28T12:48:02 EDT" duration-ms="1997" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:45 EDT" name="setUp" finished-at="2026-08-28T15:04:49 EDT" duration-ms="3391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testingWithInValidCredentilas()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:48:02 EDT" name="testingWithInValidCredentilas" finished-at="2026-08-28T12:48:05 EDT" duration-ms="2926" status="FAIL">
+        <test-method signature="testingWithInValidCredentilas()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:49 EDT" name="testingWithInValidCredentilas" finished-at="2026-08-28T15:04:58 EDT" duration-ms="8989" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Just a moment...123] but found [Just a moment...]]]>
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingWithInValidCredentilas -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:48:05 EDT" name="teardown" finished-at="2026-08-28T12:48:06 EDT" duration-ms="1156" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:58 EDT" name="teardown" finished-at="2026-08-28T15:04:59 EDT" duration-ms="1499" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T12:48:06 EDT" name="teardownReport" finished-at="2026-08-28T12:48:07 EDT" duration-ms="353" status="PASS">
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.LoginTest@682b2fa]" started-at="2026-08-28T15:04:59 EDT" name="teardownReport" finished-at="2026-08-28T15:05:01 EDT" duration-ms="1770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownReport -->
