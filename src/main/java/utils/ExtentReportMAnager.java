@@ -17,12 +17,18 @@ public class ExtentReportManager {
 
 	private static ExtentReports extent;
 	private static ExtentTest test;
-
+	public static String reportPath;
+	
 	public static ExtentReports getReportInstance() {
 
 		if (extent == null) {
 			String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-MM-ss").format(new Date());
-			String reportPath = "reports/ExtentReport_" + timestamp + ".html";
+//			reportPath = "reports/ExtentReport_" + timestamp + ".html";
+			reportPath = System.getProperty("user.dir")
+			        + "/reports/ExtentReport_"
+			        + timestamp
+			        + ".html";
+			System.out.println("Report absolute path: " + reportPath);
 			ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
 
 			reporter.config().setDocumentTitle("Automation Test Report");

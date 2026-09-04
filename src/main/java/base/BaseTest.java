@@ -14,6 +14,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
+import utils.EmailUtils;
 import utils.ExtentReportManager;
 
 //import com.aventstack.extentreports.ExtentReports;
@@ -34,11 +35,32 @@ public class BaseTest {
 	@BeforeSuite
 	public void setupReport() {
 		extent = ExtentReportManager.getReportInstance();
+		 System.out.println(
+			        "Extent report will be created at: "
+			        + ExtentReportManager.reportPath
+			    );
 	}
 	
 	@AfterSuite
+//	public void teardownReport() {
+//		extent.flush();
+//		String reportPath = ExtentReportManager.reportPath;
+//		EmailUtils.sendTestReport(reportPath);
+//	}
+	
 	public void teardownReport() {
-		extent.flush();
+
+	    System.out.println("Before extent.flush()");
+
+	    extent.flush();
+
+	    System.out.println("After extent.flush()");
+
+	    String reportPath = ExtentReportManager.reportPath;
+
+	    System.out.println("Final report path: " + reportPath);
+
+	    // EmailUtils.sendTestReport(reportPath);
 	}
 	
 	
